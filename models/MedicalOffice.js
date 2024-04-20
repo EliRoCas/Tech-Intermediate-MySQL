@@ -7,8 +7,11 @@ const medicalOffices = DB.define('medicalOffices', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    floor :{
+    floor: {
         type: DataTypes.STRING,
         allowNull: false
     }
 })
+
+
+export default medicalOffices; 
