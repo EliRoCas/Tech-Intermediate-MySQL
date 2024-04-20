@@ -11,7 +11,7 @@ import routesAppointments from '../routes/RoutesAppointments.js'
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use('/appointmets', routesAppointments);
+app.use('/appointments', routesAppointments);
 
 // Autenticación y verificación DB 
 try {

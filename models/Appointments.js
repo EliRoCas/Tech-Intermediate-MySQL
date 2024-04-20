@@ -3,7 +3,7 @@ import DB from "../config/db.js";
 import { DataTypes } from "sequelize";
 
 
-const appointmets = DB.define('appointments', {
+const appointments = DB.define('appointments', {
     doctor_name: {
         type: DataTypes.STRING,
         allowNull: false
@@ -22,4 +22,4 @@ const appointmets = DB.define('appointments', {
     }
 })
 
-export default appointmets;
+export default appointments;
