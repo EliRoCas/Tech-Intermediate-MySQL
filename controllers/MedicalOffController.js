@@ -14,7 +14,7 @@ export const addMedicalOff = async (req, res) => {
 }
 
 // GET todos los consultorios
-export const getAllMedicalOff = async (res, req) => {
+export const getAllMedicalOff = async (req, res) => {
     try {
         const medicalOff = await medicalOffices.findAll();
         res.json(medicalOff);

@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/appointments', routesAppointments);
-app.use('/meddicalOffices', routesMedicalOff);
+app.use('/medicalOffices', routesMedicalOff);
 
 // Autenticación y verificación DB 
 try {
