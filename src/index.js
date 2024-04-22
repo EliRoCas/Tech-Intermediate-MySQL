@@ -5,13 +5,15 @@ import cors from "cors";
 import DB from '../config/db.js';
 
 // Se importa el archivo de las rutas
-import routesAppointments from '../routes/RoutesAppointments.js'
+import routesAppointments from '../routes/RoutesAppointments.js';
+import routesMedicalOff from '../routes/RoutesMedicalO.js';
 
 // Se define la vaiable app para trabajar con express
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/appointments', routesAppointments);
+app.use('/meddicalOffices', routesMedicalOff);
 
 // Autenticación y verificación DB 
 try {
